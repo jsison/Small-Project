@@ -1,11 +1,11 @@
 <?php
 $user = $_GET['user'];
-include('src/php/create_table.php');
+include('create_table.php');
 ?>
 <html>
     <head>
         <title>To-Do List</title>
-        <link rel="stylesheet" href="src/styles/styles.css">
+        <link rel="stylesheet" href="../styles/styles.css">
     </head>
     <body>
         <!--START OF HEADER-->
@@ -23,6 +23,7 @@ include('src/php/create_table.php');
                     <th>Estimated Hours</th>
                     <th>Actions</th>
                 </tr>
+                <!--Creates table row based on user variable-->
                 <?php createProjectTable(); ?>
             </table>
         </div>
