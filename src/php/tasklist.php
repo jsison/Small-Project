@@ -1,5 +1,7 @@
 <?php
-$user = $_GET['user'];
+session_start();
+$est_hours = $_SESSION['hours'];
+echo $est_hours[0];
 include('create_table.php');
 ?>
 <html>
@@ -10,7 +12,8 @@ include('create_table.php');
     <body>
         <!--START OF HEADER-->
         <div class="list-header">
-            <h1><?php echo $user ?>'s Project List</h1>
+            <h1>Placement Text</h1>
+            <h2>hours</h2>
         </div>
         <!--END OF HEADER-->
         
@@ -19,7 +22,7 @@ include('create_table.php');
             <table>
                 <tr>
                     <th>Task</th>
-                    <th>ASsigned To</th>
+                    <th>Assigned To</th>
                     <th>Estimated Hours</th>
                 </tr>
                 <!--Creates table row based on user variable-->

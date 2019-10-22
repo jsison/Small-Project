@@ -3,6 +3,7 @@
     margin: 0; 
     
 }
+
 .list-header{
     padding: 50px;
 }
@@ -19,4 +20,12 @@ th{
 }
 tr:nth-child(even){
     background-color:lightgray;
+}
+
+/*Tasklist Styles*/
+.list-header > h1{
+    float:left;
+}
+.list-header > h2{
+    float: right;
 }
