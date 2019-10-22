@@ -1,0 +1,3 @@
+Websocket Updates|Stuart|10
+Angular Upgrade|Lan, Stuart|35
+E-Commerce Website|Adam, Tyler|20

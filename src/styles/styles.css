@@ -1,0 +1,22 @@
+*{ 
+    padding: 0;
+    margin: 0; 
+    
+}
+.list-header{
+    padding: 50px;
+}
+.list-body{
+    margin: 20px;
+}
+.list-body > table{
+    border: 1px solid black;
+    width: 100%;
+}
+th{
+    background-color: gray;
+    text-align: left;
+}
+tr:nth-child(even){
+    background-color:lightgray;
+}
