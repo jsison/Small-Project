@@ -5,7 +5,7 @@
 }
 
 .list-header{
-    padding: 50px;
+    padding: 20px;
 }
 .list-body{
     margin: 20px;
@@ -18,14 +18,33 @@ th{
     background-color: gray;
     text-align: left;
 }
+td, th{
+    padding:2px;
+}
 tr:nth-child(even){
     background-color:lightgray;
 }
+
+/*Projectlist styles*/
+td > a{
+    background-color: lightgray;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px 0 5px 10px;
+}
+
 
 /*Tasklist Styles*/
 .list-header > h1{
     float:left;
 }
-.list-header > h2{
+.list-header > h1:last-child{
     float: right;
+}
+.list-footer{
+    margin:20px;
 }

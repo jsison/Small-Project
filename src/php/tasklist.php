@@ -1,8 +1,10 @@
 <?php
-session_start();
-$est_hours = $_SESSION['hours'];
-echo $est_hours[0];
-include('create_table.php');
+    //Get Variables from Project List that display the data from Task List table here.
+    session_start();
+    $proj_name = $_SESSION['proj'];
+    $est_hours = $_SESSION['hours'];
+    $id = $_GET['id'];
+    include('create_table.php');
 ?>
 <html>
     <head>
@@ -12,8 +14,8 @@ include('create_table.php');
     <body>
         <!--START OF HEADER-->
         <div class="list-header">
-            <h1>Placement Text</h1>
-            <h2>hours</h2>
+            <h1><?php echo $proj_name[$id] ?></h1>
+            <h1><?php echo $est_hours[$id] ?> hours</h1>
         </div>
         <!--END OF HEADER-->
         
@@ -26,12 +28,22 @@ include('create_table.php');
                     <th>Estimated Hours</th>
                 </tr>
                 <!--Creates table row based on user variable-->
-                <?php //table script here ?>
+                <?php createTasklist(); ?>
             </table>
         </div>
         <!--END OF BODY-->
         
         <!--START OF FOOTER-->
+        <div class="list-footer">
+            <button onclick="goBack()">Back</button>
+        </div>
         <!--END OF FOOTER-->
     </body>
 </html>
+
+<script>
+    //Go back to one page for button
+    function goBack(){
+        window.history.back();
+    }
+</script>
