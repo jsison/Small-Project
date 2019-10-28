@@ -39,10 +39,10 @@ td > a{
 
 
 /*Tasklist Styles*/
-.list-header > h1{
+.project-name{
     float:left;
 }
-.list-header > h1:last-child{
+.project-hours{
     float: right;
 }
 .list-footer{

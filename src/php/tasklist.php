@@ -14,8 +14,8 @@
     <body>
         <!--START OF HEADER-->
         <div class="list-header">
-            <h1><?php echo $proj_name[$id] ?></h1>
-            <h1><?php echo $est_hours[$id] ?> hours</h1>
+            <h1 class="project-name"><?php echo $proj_name[$id] ?></h1>
+            <h1 class="project-hours"><?php echo $est_hours[$id] ?> hours</h1>
         </div>
         <!--END OF HEADER-->
         
